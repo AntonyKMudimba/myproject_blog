@@ -1,5 +1,5 @@
 
-from .models import Feature
+from myapp.models import Feature
 from django.core.mail import send_mail
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView
@@ -73,4 +73,17 @@ def about(request):
 
 
 
+def index(request):
+    return render(request, 'about.html', {})
 
+
+
+
+def blog(request):
+    return render(request, 'about.html', {})
+
+
+
+
+def posts(request):
+    return render(request, 'about.html', {})
